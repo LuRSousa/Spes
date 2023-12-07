@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../../css/geral.css">
+        <link rel="stylesheet" href="../../css/tri2.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+        <script src="../../js/tri2.js"></script>
+        <script src="../../js/geral.js"></script>
+
+        <link rel="shortcut icon" type="imagex/png" href="../../img/geral/logos/icon.svg">
+        <title>Kayapó - Spes</title>
+    </head>
+    
+    <body>
+        <section class="first" style="background-image: url(../../img/tri2/tri2bg.png);">
+            <header>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index-ing.html" id="title">Home</a>
+                    <a href="cont-ing.html" id="title">History</a>
+                    <span id="title">Impacts</span>
+                    <a href="bio-ing.html" id="subtitle">Biodiversity</a>
+                    <a href="cult-ing.html" id="subtitle">Culture</a>
+                    <a href="sau-ing" id="subtitle">Health</a>
+                    <a href="eco-ing" id="subtitle">Economy</a>
+                    <span id="title">Learn More</span>
+                    <a href="leg-ing.html" id="subtitle">Laws</a>
+                    <a href="orgs-ing.html" id="subtitle">Organizations</a>
+                    <a href="solu-ing.html" id="subtitle">Solutions</a>
+                    <span id="title">Tribes</span>
+                    <a href="tri1-ing.html" id="subtitle">Munduruku</a>
+                    <a href="tri2-ing.html" id="subtitle">Kayapó</a>
+                    <a href="tri3-ing.html" id="subtitle">Yanomami</a>
+                    <div class="btns mobile">
+                        <button class="btn btn-outline-success" type="submit">
+                            <a href="login-ing.html">
+                                Login
+                                <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z"></path>
+                                    <path d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z"></path>
+                                </svg>
+                                </a>
+                        </button>
+                        <button class="btn btn-outline-success" type="submit">
+                            <a href="donate-ing.html">
+                                Donation
+                                <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 15.75h19.5a.75.75 0 0 0 .75-.75V4.5a.75.75 0 0 0-.75-.75H2.25a.75.75 0 0 0-.75.75V15c0 .414.336.75.75.75Z"></path>
+                                    <path d="M3 18h18"></path>
+                                    <path d="M4.5 20.25h15"></path>
+                                    <path d="M12 13.5A3.75 3.75 0 1 0 12 6a3.75 3.75 0 0 0 0 7.5Z"></path>
+                                    <path d="M22.5 7.5a3.75 3.75 0 0 1-3.75-3.75"></path>
+                                    <path d="M1.5 7.5a3.75 3.75 0 0 0 3.75-3.75"></path>
+                                    <path d="M22.5 12a3.75 3.75 0 0 0-3.75 3.75"></path>
+                                    <path d="M1.5 12a3.75 3.75 0 0 1 3.75 3.75"></path>
+                                </svg>
+                            </a>
+                        </button>
+                        <button class="lang">
+                            <a href="../pt/tri2-pt.html">
+                                <img src="../../img/geral/ptflag.png" alt="">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <span class="opennav" onclick="openNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+                        <g fill="#1d4f33" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path></g></g>
+                    </svg>
+                </span>
+                <a class="navbar-brand mobile" href="index-ing.html">
+                    Spes
+                    <img src="../../img/geral/logos/logomenu.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+                </a>
+                <nav class="navbar navbar-expand-lg navbar-expand-sm animate__animated animate__fadeInDown">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index-ing.html">
+                            <img src="../../img/geral/logos/logomenu.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+                            Spes
+                        </a>
+                        <div class="nav-list">
+                            <ul class="nav-menu">
+                                <li class="nav-item"><a href="index-ing.html" class="nav-link" id="title">Home</a></li>
+                                <li class="nav-item"><a href="cont-ing.html" class="nav-link" id="title">History</a></li>
+                                <li class="nav-item">
+                                    <span id="title">Impacts</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="bio-ing.html" class="nav-link" id="sub-title">Biodiversity</a></li>
+                                        <li class="nav-sub-item"><a href="cult-ing.html" class="nav-link" id="sub-title">Culture</a></li>
+                                        <li class="nav-sub-item"><a href="sau-ing.html" class="nav-link" id="sub-title">Health</a></li>
+                                        <li class="nav-sub-item"><a href="eco-ing.html" class="nav-link" id="sub-title">Economy</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span id="title">Learn More</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="leg-ing.html" class="nav-link" id="sub-title">Laws</a></li>
+                                        <li class="nav-sub-item"><a href="orgs-ing.html" class="nav-link" id="sub-title">Organizations</a></li>
+                                        <li class="nav-sub-item"><a href="solu-ing.html" class="nav-link" id="sub-title">Solutions</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span id="title">Tribes</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="tri1-ing.html" class="nav-link" id="sub-title">Munduruku</a></li>
+                                        <li class="nav-sub-item"><a href="tri2-ing.html" class="nav-link" id="sub-title">Kayapó</a></li>
+                                        <li class="nav-sub-item"><a href="tri3-ing.html" class="nav-link" id="sub-title">Yanomami</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btns">
+                            <button class="btn btn-outline-success" type="submit">
+                                <a href="login-ing.html">
+                                    Login
+                                    <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z"></path>
+                                        <path d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z"></path>
+                                    </svg>
+                                    </a>
+                            </button>
+                            <button class="btn btn-outline-success" type="submit">
+                                <a href="donate-ing.html">
+                                    Donation
+                                    <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 15.75h19.5a.75.75 0 0 0 .75-.75V4.5a.75.75 0 0 0-.75-.75H2.25a.75.75 0 0 0-.75.75V15c0 .414.336.75.75.75Z"></path>
+                                        <path d="M3 18h18"></path>
+                                        <path d="M4.5 20.25h15"></path>
+                                        <path d="M12 13.5A3.75 3.75 0 1 0 12 6a3.75 3.75 0 0 0 0 7.5Z"></path>
+                                        <path d="M22.5 7.5a3.75 3.75 0 0 1-3.75-3.75"></path>
+                                        <path d="M1.5 7.5a3.75 3.75 0 0 0 3.75-3.75"></path>
+                                        <path d="M22.5 12a3.75 3.75 0 0 0-3.75 3.75"></path>
+                                        <path d="M1.5 12a3.75 3.75 0 0 1 3.75 3.75"></path>
+                                    </svg>
+                                </a>
+                            </button>
+                            <button class="lang">
+                                <a href="../pt/tri2-pt.html">
+                                    <img src="../../img/geral/ptflag.png" alt="">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+    
+            <div class="row">
+                <p class="content-text col-md-8 animate__animated animate__fadeInLeft">
+                    JOIN US ON THIS JOURNEY THROUGH THE WORLD OF <span>Kayapó</span> the forest residents
+                </p>
+            </div>
+    
+            <div class="row">
+                <a class="saibam-btn animate__animated animate__fadeInBottomLeft" href="#second"><span>Learn More</span></a>
+            </div>
+        </section>
+        
+        <section class="second" id="second">
+            <div class="content-page C2">
+                <div class="text">
+                    <h2>Origin of the Name</h2>
+
+                    <p class="animation-text4-right">
+                        The term Kayapó (sometimes also "kayapó" or "caiapó") was first used at the beginning of the 19th century. The Kayapó themselves do not refer to themselves by the term used by neighboring groups to refer to them, which means "monkey-like", probably due to a ritual in which Kayapó men dress up as monkeys for several weeks, wear masks and perform short dances. Although they know that others call them this, the Kayapó call themselves Mebêngôkre, "men of the well/place".
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img src="../../img/tri2/tri2 1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second">
+            <div class="content-page C1">  
+                <div class="icon-text">
+                    <div class="texts2">
+                        <h2>History</h2>
+                        <p class="animation-text6-right">
+                            The Kayapó are an indigenous people who live in villages scattered along the Iriri, Bacajá, Fresco and other affluents of the Xingu rivers, in Pernambuco central. They are known for their rich culture and complex social organization. In the 19th century, the Kayapó split into three large groups, the Iran' ãmranh-re, the Goroti Kumrenhtx and the Porekry. Today there are seven Kayapó subgroups: Gorotire, Kuben-Krân-Krên, Kôkraimôrô, Kararaô, Mekrãgnoti, Metyktire and Xikrin.
+                        </p>
+                    </div>
+                    
+                    <div class="imgs">
+                        <img src="../../img/tri2/tri2 2-1.png" alt="" class="animation-icones-top">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second">
+            <div class="content-page C2">
+                <div class="text animation-text7-opa">
+                    <p>
+                        The Kayapó were called "monkey-men" by a neighboring indigenous group who used the word Kayapó at the beginning of the 19th century. The Kayapó people call themselves mebêngôkre, which means "people of the well/place". The language spoken by the Kayapó belongs to the Dje linguistic family, of Macro-Je origin. They are famous for their oratory, which is a valuable social practice.                    
+                    </p>
+                </div>
+
+                <div class="icon-text4">
+                    <div class="texts2">
+                        <p class="animation-text3-right">
+                            For decades, the Kayapó have protected a vast area of Amazon rainforest stretching from the north of the Grosso desert to the south of Pará. They have an intense and ambiguous relationship with national societies and environmentalists from all over the world. The cosmology, ritual life and social organization of these people is extremely rich and intricate. They are one of many indigenous tribes battling to maintain their traditions and way of life in an ever-changing world.                       
+                        </p>
+                    </div>
+                    
+                    <div class="imgs">
+                        <img src="../../img/tri2/tri2 2-2.png" alt="" class="animation-icones-top">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second">
+            <div class="content-page C2">
+                <div class="text">
+                    <h2>Localization</h2>
+                </div>
+
+                <div class="icon-text4">
+                    <div class="texts2">
+                        <p class="animation-text2-right">
+                            The Kayapó region is located on the central Brazilian plain, around 300 to 400 meters above sea level. It is an area full of valleys and small hills with a maximum height of 400 meters, often isolated and scattered throughout the area, extending down to the plain. The large rivers are fed by countless bays and streams, which Brazilians have never discovered because they are so small and nameless. With more than 12,000 indigenous people, the Kayapó people, also known as the Mebêngôkre, have inhabited and protected an extensive area of the Amazon rainforest for decades, stretching from the north of Mato Grosso to the south of Pará.
+                        </p>
+                    </div>
+                    
+                    <div class="imgs">
+                        <img src="../../img/tri2/tri2 3.png" alt="" class="animation-icones-top">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second" style="background-image: url(../../img/geral/foiabg.svg);">
+            <div class="content-page C1">  
+                <div class="icon-text3">
+                    <div class="texts3">
+                        <h2>Culture</h2>
+                        <p class="animation-text1-left green">
+                            The richness and complexity of the Kayapó culture is surprising. They have a unique cosmology, ritual lifestyle and form of social organization. The language spoken by the Kayapó belongs to the Jê linguistic family, of the Macro-Jê trunk. There are dialectal divergences between the different Kayapó groups resulting from the ruptures that gave rise to these groups, but in all of them, language is an overarching ethnic trait, which leads to the recognition that they are part of a shared culture.
+                            The Kayapó highly value the social practice of oratory and consider themselves skilled at speaking beautifully and eloquently (Kaben mei), differentiating themselves from other groups who don't speak their language. However, at certain times, such as council speeches or ceremonial events, Kayapó men express their words with a tone of voice that resembles someone hitting them in the stomach (ben), thus distinguishing this form of oratory from everyday speech.
+                        </p>
+                    </div>
+                    
+                    <div class="imgs">
+                        <img src="../../img/tri2/tri2 4.png" alt="" class="animation-icones-top">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourth" id="second" style="background-image: url(../../img/geral/foiabg.svg);">
+            
+            <div class="content-page C3" >
+                <div class="iconbg2" style="background-image: url(../../img/tri2/tri2\ icobg.png);"></div>
+
+                <div class="texts5">
+                    <div class="animation-text4-opa title3">
+                        <p>
+                            Cultivation
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="icons">
+                    <img src="../../img/tri2/tri2 ico1.png" alt="" class="animation-icon1-left">
+
+                    <img src="../../img/tri2/tri2 ico2.png" alt="" class="animation-icon1-left">
+    
+                    <img src="../../img/tri2/tri2 ico3.png" alt="" class="animation-icon2-right">                   
+    
+                    <img src="../../img/tri2/tri2 ico4.png" alt="" class="animation-icon2-right">         
+                </div>
+
+                <div class="text3 green">
+                    The Kayapó are a people who live by farming, hunting, fishing and gathering. They mainly grow manioc, corn, sweet potatoes, yams, pumpkin and cotton. Hunting is an important activity for the Kayapó, who mainly hunt deer, tapirs, pacas, coyotes, monkeys and birds. Fishing takes place in the rivers and streams near the villages. The Kayapó also collect fruit, nuts and honey in the forest.                </div>
+            </div>
+        </section>
+
+        <section class="end">
+            <section class="content donate" style="background-image: url(../../img/geral/donate.jpg); background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;">
+                <div class="donate-box animation-donate-right">
+                    <h2>Do Your Bit</h2>
+                    <div class="donate-text">
+                        <p>
+                            Help the one that <span>need</span> your help, with very little you help a lot.
+                        </p>
+                    </div>
+                    <a class="donate-btn" href="donate-ing.html"><span>Donate</span></a>
+                </div>
+            </section>
+    
+            <section class="container-fluid content footer" style="background-image: url(../../img/geral/foiabg.svg);">
+                <div class="logo col-4 animation-logo-left">
+                    <a href="index-ing.html">
+                        <img src="../../img/geral/logos/logofooter.svg" alt="">
+                    </a>
+                    <div class="slogan">
+                        With every perseverance, a new hope
+                    </div>
+                </div>
+    
+                <div class="footer-menu animation-menu-right">
+                    <div class="menu-list">
+                        <ul class="footer-menu">
+                            <div class="block1">
+                                <div class="footer-itens">
+                                    <li class="menu-item"><a href="index-ing.html" class="nav-link" id="title">Home</a></li>
+                                    <li class="menu-item"><a href="cont-ing.html" class="nav-link" id="title">History</a></li>
+                                    <li class="menu-item"><a href="devs-ing.html" class="nav-link" id="title">About Us</a></li>
+                                </div>
+                            </div>
+                            <div class="block2">
+                                <li class="menu-item">
+                                    <span id="title">Impacts</span>
+                                    <ul class="menu-submenu">
+                                        <li class="nav-sub-item"><a href="bio-ing.html" class="nav-link" id="sub-title">Biodiversity</a></li>
+                                        <li class="nav-sub-item"><a href="cult-ing.html" class="nav-link" id="sub-title">Culture</a></li>
+                                        <li class="nav-sub-item"><a href="sau-ing.html" class="nav-link" id="sub-title">Health</a></li>
+                                        <li class="nav-sub-item"><a href="eco-ing.html" class="nav-link" id="sub-title">Economy</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="block3">
+                            <li class="menu-item">
+                                <span id="title">Learn More</span>
+                                <ul class="menu-submenu">
+                                    <li class="nav-sub-item"><a href="leg-ing.html" class="nav-link" id="sub-title">Laws</a></li>
+                                    <li class="nav-sub-item"><a href="orgs-ing.html" class="nav-link" id="sub-title">Organizations</a></li>
+                                    <li class="nav-sub-item"><a href="solu-ing.html" class="nav-link" id="sub-title">Solutions</a></li>
+                                </ul>
+                            </li>
+                                <li class="menu-item">
+                                    <span id="title">Tribes</span>
+                                    <ul class="menu-submenu">
+                                        <li class="nav-sub-item"><a href="tri1-ing.html" class="nav-link" id="sub-title">Munduruku</a></li>
+                                        <li class="nav-sub-item"><a href="tri2-ing.html" class="nav-link" id="sub-title">Kayapó</a></li>
+                                        <li class="nav-sub-item"><a href="tri3-ing.html" class="nav-link" id="sub-title">Yanomami</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>

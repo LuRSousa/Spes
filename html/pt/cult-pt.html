@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../../css/geral.css">
+        <link rel="stylesheet" href="../../css/cult.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+        <script src="../../js/cult.js"></script>
+        <script src="../../js/geral.js"></script>
+
+        <link rel="shortcut icon" type="imagex/png" href="../../img/geral/logos/icon.svg">
+        <title>Cultura - Spes</title>
+    </head>
+    
+    <body>
+        <section class="first" style="background-image: url(../../img/cult/cultbg.png);">
+            <header>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index-pt.html" id="title">Início</a>
+                    <a href="index-pt.html" id="title">História</a>
+                    <span id="title">Impactos</span>
+                    <a href="bio-pt.html" id="subtitle">Biodiversidade</a>
+                    <a href="cult-pt.html" id="subtitle">Cultura</a>
+                    <a href="sau-pt.html" id="subtitle">Saúde</a>
+                    <a href="eco-pt.html" id="subtitle">Economia</a>
+                    <span id="title">Saiba Mais</span>
+                    <a href="leg-pt.html" id="subtitle">Legislação</a>
+                    <a href="orgs-pt.html" id="subtitle">Organizações</a>
+                    <a href="solu-pt.html" id="subtitle">Soluções</a>
+                    <span id="title">Tribos</span>
+                    <a href="tri1-pt.html" id="subtitle">Munduruku</a>
+                    <a href="tri2-pt.html" id="subtitle">Kayapó</a>
+                    <a href="tri3-pt.html" id="subtitle">Yanomami</a>
+                    <div class="btns mobile">
+                        <button class="btn btn-outline-success" type="submit">
+                            <a href="login-pt.html">
+                                Entrar
+                                <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z"></path>
+                                    <path d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z"></path>
+                                </svg>
+                                </a>
+                        </button>
+                        <button class="btn btn-outline-success" type="submit">
+                            <a href="donate-pt.html">
+                                Doação
+                                <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 15.75h19.5a.75.75 0 0 0 .75-.75V4.5a.75.75 0 0 0-.75-.75H2.25a.75.75 0 0 0-.75.75V15c0 .414.336.75.75.75Z"></path>
+                                    <path d="M3 18h18"></path>
+                                    <path d="M4.5 20.25h15"></path>
+                                    <path d="M12 13.5A3.75 3.75 0 1 0 12 6a3.75 3.75 0 0 0 0 7.5Z"></path>
+                                    <path d="M22.5 7.5a3.75 3.75 0 0 1-3.75-3.75"></path>
+                                    <path d="M1.5 7.5a3.75 3.75 0 0 0 3.75-3.75"></path>
+                                    <path d="M22.5 12a3.75 3.75 0 0 0-3.75 3.75"></path>
+                                    <path d="M1.5 12a3.75 3.75 0 0 1 3.75 3.75"></path>
+                                </svg>
+                            </a>
+                        </button>
+                        <button class="lang">
+                            <a href="../ing/cult-ing.html">
+                                <img src="../../img/geral/ingflag.png" alt="">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <span class="opennav" onclick="openNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+                        <g fill="#1d4f33" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path></g></g>
+                    </svg>
+                </span>
+                <a class="navbar-brand mobile" href="index-pt.html">
+                    Spes
+                    <img src="../../img/geral/logos/logomenu.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+                </a>
+                <nav class="navbar navbar-expand-lg navbar-expand-sm animate__animated animate__fadeInDown">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index-pt.html">
+                            <img src="../../img/geral/logos/logomenu.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+                            Spes
+                        </a>
+                        <div class="nav-list">
+                            <ul class="nav-menu">
+                                <li class="nav-item"><a href="index-pt.html" class="nav-link" id="title">Início</a></li>
+                                <li class="nav-item"><a href="cont-pt.html" class="nav-link" id="title">História</a></li>
+                                <li class="nav-item">
+                                    <span id="title">Impactos</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="bio-pt.html" class="nav-link" id="sub-title">Biodiversidade</a></li>
+                                        <li class="nav-sub-item"><a href="cult-pt.html" class="nav-link" id="sub-title">Cultura Indígena</a></li>
+                                        <li class="nav-sub-item"><a href="sau-pt.html" class="nav-link" id="sub-title">Saúde</a></li>
+                                        <li class="nav-sub-item"><a href="eco-pt.html" class="nav-link" id="sub-title">Economia</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span id="title">Saiba Mais</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="leg-pt.html" class="nav-link" id="sub-title">Legislação</a></li>
+                                        <li class="nav-sub-item"><a href="orgs-pt.html" class="nav-link" id="sub-title">Organizações</a></li>
+                                        <li class="nav-sub-item"><a href="solu-pt.html" class="nav-link" id="sub-title">Soluções</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span id="title">Tribos</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="tri1-pt.html" class="nav-link" id="sub-title">Munduruku</a></li>
+                                        <li class="nav-sub-item"><a href="tri2-pt.html" class="nav-link" id="sub-title">Kayapó</a></li>
+                                        <li class="nav-sub-item"><a href="tri3-pt.html" class="nav-link" id="sub-title">Yanomami</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btns">
+                            <button class="btn btn-outline-success" type="submit">
+                                <a href="login-pt.html">
+                                    Entrar
+                                    <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z"></path>
+                                        <path d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z"></path>
+                                    </svg>
+                                    </a>
+                            </button>
+                            <button class="btn btn-outline-success" type="submit">
+                                <a href="donate-pt.html">
+                                    Doação
+                                    <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 15.75h19.5a.75.75 0 0 0 .75-.75V4.5a.75.75 0 0 0-.75-.75H2.25a.75.75 0 0 0-.75.75V15c0 .414.336.75.75.75Z"></path>
+                                        <path d="M3 18h18"></path>
+                                        <path d="M4.5 20.25h15"></path>
+                                        <path d="M12 13.5A3.75 3.75 0 1 0 12 6a3.75 3.75 0 0 0 0 7.5Z"></path>
+                                        <path d="M22.5 7.5a3.75 3.75 0 0 1-3.75-3.75"></path>
+                                        <path d="M1.5 7.5a3.75 3.75 0 0 0 3.75-3.75"></path>
+                                        <path d="M22.5 12a3.75 3.75 0 0 0-3.75 3.75"></path>
+                                        <path d="M1.5 12a3.75 3.75 0 0 1 3.75 3.75"></path>
+                                    </svg>
+                                </a>
+                            </button>
+                            <button class="lang">
+                                <a href="../ing/cult-ing.html">
+                                    <img src="../../img/geral/ingflag.png" alt="">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+    
+            <div class="row">
+                <p class="content-text col-md-9 animate__animated animate__fadeInLeft">
+                    A VIOLÊNCIA CONTRA OS POVOS INDÍGENAS NO BRASIL vem aumentando, PRINCIPALMENTE PELA <span>OCUPAÇÃO DE SEUS TERRITÓRIOS.</span> 
+                </p>
+            </div>
+    
+            <div class="row">
+                <a class="saibam-btn animate__animated animate__fadeInBottomLeft" href="#second"><span>Saiba Mais</span></a>
+            </div>
+        </section>
+
+                <section class="second" id="second">
+                    <div class="content-page C1">
+                        <div class="text animation-text1-top">
+                            <p>
+                                A grilagem de terras, o roubo de madeira, a mineração, as invasões e até mesmo a subdivisão de seus territórios tradicionais pelos povos indígenas brasileiros são crescentes, o que deixa claro que a crescente disputa por esses territórios atingiu níveis alarmantes. 
+                            </p>
+                        </div>
+            
+                        <div class="img">
+                            <img src="../../img/cult/cult1.png" alt="">
+                        </div>
+                    </div>
+        
+                    <img src="../../img/index/foia2.svg" alt="" id="foia1">
+                </section>
+        
+                <section class="third" style="background-image: url(../../img/geral/foiabg.svg);">
+                    <div class="content-page C2">
+                        <div class="text animation-text2-top claro">
+                            <p>
+                                Evidências científicas sugerem que os povos indígenas historicamente praticaram um manejo sustentável na Amazônia, preservando sua biodiversidade. Estudos indicam que a Amazônia pré-histórica não sofreu desmatamento significativo, e povos indígenas moldaram ativamente a floresta.
+                            </p>
+                        </div>
+        
+                        <div class="img">
+                            <img src="../../img/cult/cult2.png" alt="">
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="fourth" style="background-image: url(../../img/geral/foiabg.svg);">
+                    <div class="content-page C3">
+                        <div class="green claro">
+                            <p>
+                                Atualmente, os povos indígenas enfrentam desafios como o desmatamento e a exploração ilegal de suas terras. Organizações como o Fundo Brasil apoiam projetos liderados pelos próprios indígenas na defesa de seus direitos territoriais e da biodiversidade, sendo essencial o apoio da sociedade civil nessa luta. 
+                            </p>
+                        </div>
+            
+                        <div class="img">
+                            <img src="../../img/cult/cult3.png" alt="">
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="second" id="second">
+                    <div class="content-page C4">
+                        <div class="img last" style="background-color: transparent;">
+                            <img class="oca animation-icon-opa" src="../../img/cult/oca.svg" alt="">
+                        </div>
+        
+                        <div class="text">
+                            <p>
+                                Os 160 casos registrados até setembro de 2019 envolveram ataques ou uso ilegal de recursos naturais em 76 tribos indígenas diferentes, 13 entre 19 estados brasileiros. Outro caso importante de violação de direitos indígenas é o da Terra Indígena (TI) Munduruku, onde se estima que já tenham sido instaladas mais de 500 minas.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <img src="../../img/index/foia2.svg" alt="" id="foia1">
+                    <img src="../../img/index/foia.svg" alt="" id="foia2">
+                </section>
+
+                <section class="end">
+                    <section class="content donate" style="background-image: url(../../img/geral/donate.jpg); background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;">
+                        <div class="donate-box animation-donate-right">
+                            <h2>Faça sua Parte</h2>
+                            <div class="donate-text">
+                                <p>
+                                    Ajude aqueles que <span>necessitam</span> da sua ajuda, com pouco você ajuda muito.
+                                </p>
+                            </div>
+                            <a class="donate-btn" href="donate-pt.html"><span>Doe Agora</span></a>
+                        </div>
+                    </section>
+            
+                    <section class="container-fluid content footer" style="background-image: url(../../img/geral/foiabg.svg);">
+                        <div class="logo col-4 animation-logo-left">
+                            <a href="index-pt.html">
+                                <img src="../../img/geral/logos/logofooter.svg" alt="">
+                            </a>
+                            <div class="slogan">
+                                A cada perseverança, uma nova esperança
+                            </div>
+                        </div>
+            
+                        <div class="footer-menu animation-menu-right">
+                            <div class="menu-list">
+                                <ul class="footer-menu">
+                                    <div class="block1">
+                                        <div class="footer-itens">
+                                            <li class="menu-item"><a href="index-pt.html" class="nav-link" id="title">Início</a></li>
+                                            <li class="menu-item"><a href="cont-pt.html" class="nav-link" id="title">História</a></li>
+                                            <li class="menu-item"><a href="devs-pt.html" class="nav-link" id="title">Quem Somos</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="block2">
+                                        <li class="menu-item">
+                                            <span id="title">Impactos</span>
+                                            <ul class="menu-submenu">
+                                                <li class="nav-sub-item"><a href="bio-pt.html" class="nav-link" id="sub-title">Biodiversidade</a></li>
+                                                <li class="nav-sub-item"><a href="cult-pt.html" class="nav-link" id="sub-title">Cultura Indígena</a></li>
+                                                <li class="nav-sub-item"><a href="sau-pt.html" class="nav-link" id="sub-title">Saúde</a></li>
+                                                <li class="nav-sub-item"><a href="eco-pt.html" class="nav-link" id="sub-title">Economia</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                    <div class="block3">
+                                    <li class="menu-item">
+                                        <span id="title">Saiba Mais</span>
+                                        <ul class="menu-submenu">
+                                            <li class="nav-sub-item"><a href="leg-pt.html" class="nav-link" id="sub-title">Legislação</a></li>
+                                            <li class="nav-sub-item"><a href="orgs-pt.html" class="nav-link" id="sub-title">Organizações</a></li>
+                                            <li class="nav-sub-item"><a href="solu-pt.html" class="nav-link" id="sub-title">Soluções</a></li>
+                                        </ul>
+                                    </li>
+                                        <li class="menu-item">
+                                            <span id="title">Tribos</span>
+                                            <ul class="menu-submenu">
+                                                <li class="nav-sub-item"><a href="tri1-pt.html" class="nav-link" id="sub-title">Munduruku</a></li>
+                                                <li class="nav-sub-item"><a href="tri2-pt.html" class="nav-link" id="sub-title">Kayapó</a></li>
+                                                <li class="nav-sub-item"><a href="tri3-pt.html" class="nav-link" id="sub-title">Yanomami</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+    </body>
+</html>

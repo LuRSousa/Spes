@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../../css/geral.css">
+        <link rel="stylesheet" href="../../css/tri3.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+        <script src="../../js/tri2.js"></script>
+        <script src="../../js/geral.js"></script>
+
+        <link rel="shortcut icon" type="imagex/png" href="../../img/geral/logos/icon.svg">
+        <title>Yanomami - Spes</title>
+    </head>
+    
+    <body>
+        <section class="first" style="background-image: url(../../img/tri3/tri3bg.png);">
+            <header>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index-pt.html" id="title">Início</a>
+                    <a href="index-pt.html" id="title">História</a>
+                    <span id="title">Impactos</span>
+                    <a href="bio-pt.html" id="subtitle">Biodiversidade</a>
+                    <a href="cult-pt.html" id="subtitle">Cultura</a>
+                    <a href="sau-pt.html" id="subtitle">Saúde</a>
+                    <a href="eco-pt.html" id="subtitle">Economia</a>
+                    <span id="title">Saiba Mais</span>
+                    <a href="leg-pt.html" id="subtitle">Legislação</a>
+                    <a href="orgs-pt.html" id="subtitle">Organizações</a>
+                    <a href="solu-pt.html" id="subtitle">Soluções</a>
+                    <span id="title">Tribos</span>
+                    <a href="tri1-pt.html" id="subtitle">Munduruku</a>
+                    <a href="tri2-pt.html" id="subtitle">Kayapó</a>
+                    <a href="tri3-pt.html" id="subtitle">Yanomami</a>
+                    <div class="btns mobile">
+                        <button class="btn btn-outline-success" type="submit">
+                            <a href="login-pt.html">
+                                Entrar
+                                <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z"></path>
+                                    <path d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z"></path>
+                                </svg>
+                                </a>
+                        </button>
+                        <button class="btn btn-outline-success" type="submit">
+                            <a href="donate-pt.html">
+                                Doação
+                                <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 15.75h19.5a.75.75 0 0 0 .75-.75V4.5a.75.75 0 0 0-.75-.75H2.25a.75.75 0 0 0-.75.75V15c0 .414.336.75.75.75Z"></path>
+                                    <path d="M3 18h18"></path>
+                                    <path d="M4.5 20.25h15"></path>
+                                    <path d="M12 13.5A3.75 3.75 0 1 0 12 6a3.75 3.75 0 0 0 0 7.5Z"></path>
+                                    <path d="M22.5 7.5a3.75 3.75 0 0 1-3.75-3.75"></path>
+                                    <path d="M1.5 7.5a3.75 3.75 0 0 0 3.75-3.75"></path>
+                                    <path d="M22.5 12a3.75 3.75 0 0 0-3.75 3.75"></path>
+                                    <path d="M1.5 12a3.75 3.75 0 0 1 3.75 3.75"></path>
+                                </svg>
+                            </a>
+                        </button>
+                        <button class="lang">
+                            <a href="../ing/tri2-ing.html">
+                                <img src="../../img/geral/ingflag.png" alt="">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <span class="opennav" onclick="openNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+                        <g fill="#1d4f33" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path></g></g>
+                    </svg>
+                </span>
+                <a class="navbar-brand mobile" href="index-pt.html">
+                    Spes
+                    <img src="../../img/geral/logos/logomenu.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+                </a>
+                <nav class="navbar navbar-expand-lg navbar-expand-sm animate__animated animate__fadeInDown">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index-pt.html">
+                            <img src="../../img/geral/logos/logomenu.svg" alt="" width="60" height="60" class="d-inline-block align-text-top">
+                            Spes
+                        </a>
+                        <div class="nav-list">
+                            <ul class="nav-menu">
+                                <li class="nav-item"><a href="index-pt.html" class="nav-link" id="title">Início</a></li>
+                                <li class="nav-item"><a href="cont-pt.html" class="nav-link" id="title">História</a></li>
+                                <li class="nav-item">
+                                    <span id="title">Impactos</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="bio-pt.html" class="nav-link" id="sub-title">Biodiversidade</a></li>
+                                        <li class="nav-sub-item"><a href="cult-pt.html" class="nav-link" id="sub-title">Cultura Indígena</a></li>
+                                        <li class="nav-sub-item"><a href="sau-pt.html" class="nav-link" id="sub-title">Saúde</a></li>
+                                        <li class="nav-sub-item"><a href="eco-pt.html" class="nav-link" id="sub-title">Economia</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span id="title">Saiba Mais</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="leg-pt.html" class="nav-link" id="sub-title">Legislação</a></li>
+                                        <li class="nav-sub-item"><a href="orgs-pt.html" class="nav-link" id="sub-title">Organizações</a></li>
+                                        <li class="nav-sub-item"><a href="solu-pt.html" class="nav-link" id="sub-title">Soluções</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <span id="title">Tribos</span>
+                                    <svg class="arrow" color="white" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m4.594 8.912 6.553 7.646a1.126 1.126 0 0 0 1.708 0l6.552-7.646c.625-.73.107-1.857-.854-1.857H5.447c-.961 0-1.48 1.127-.853 1.857Z"></path>
+                                    </svg>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-sub-item"><a href="tri1-pt.html" class="nav-link" id="sub-title">Munduruku</a></li>
+                                        <li class="nav-sub-item"><a href="tri2-pt.html" class="nav-link" id="sub-title">Kayapó</a></li>
+                                        <li class="nav-sub-item"><a href="tri3-pt.html" class="nav-link" id="sub-title">Yanomami</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btns">
+                            <button class="btn btn-outline-success" type="submit">
+                                <a href="login-pt.html">
+                                    Entrar
+                                    <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z"></path>
+                                        <path d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z"></path>
+                                    </svg>
+                                    </a>
+                            </button>
+                            <button class="btn btn-outline-success" type="submit">
+                                <a href="donate-pt.html">
+                                    Doação
+                                    <svg color="white" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 15.75h19.5a.75.75 0 0 0 .75-.75V4.5a.75.75 0 0 0-.75-.75H2.25a.75.75 0 0 0-.75.75V15c0 .414.336.75.75.75Z"></path>
+                                        <path d="M3 18h18"></path>
+                                        <path d="M4.5 20.25h15"></path>
+                                        <path d="M12 13.5A3.75 3.75 0 1 0 12 6a3.75 3.75 0 0 0 0 7.5Z"></path>
+                                        <path d="M22.5 7.5a3.75 3.75 0 0 1-3.75-3.75"></path>
+                                        <path d="M1.5 7.5a3.75 3.75 0 0 0 3.75-3.75"></path>
+                                        <path d="M22.5 12a3.75 3.75 0 0 0-3.75 3.75"></path>
+                                        <path d="M1.5 12a3.75 3.75 0 0 1 3.75 3.75"></path>
+                                    </svg>
+                                </a>
+                            </button>
+                            <button class="lang">
+                                <a href="../ing/tri2-ing.html">
+                                    <img src="../../img/geral/ingflag.png" alt="">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+    
+            <div class="row">
+                <p class="content-text col-md-8 animate__animated animate__fadeInLeft">
+                    ACOMPANHE-NOS NESTA VIAGEM PELO MUNDO DOS <span>Yanomami</span>, OS SERES HUMANOS DA FLORESTA
+                </p>
+            </div>
+    
+            <div class="row">
+                <a class="saibam-btn animate__animated animate__fadeInBottomLeft" href="#second"><span>Saiba Mais</span></a>
+            </div>
+        </section>
+
+        <section class="second" id="second">
+            <div class="content-page C1">  
+                <div class="icon-text">
+                    <div class="texts2">
+                        <h2>Origem do Nome</h2>
+                        <p class="animation-text6-right">
+                            O termo "Yanomami" foi criado por antropólogos a partir da palavra yanõmami, que significa "seres humanos" na língua yanõmami. Esse termo é usado para se referir aos próprios Yanomami e os distingue de categorias como animais de caça (yaro), seres invisíveis ou sem nome (yai), e inimigos ou estrangeiros (napë).
+                        </p>
+                    </div>
+                    
+                    <div class="imgs">
+                        <img src="../../img/tri3/tri3 1.png" alt="" class="animation-icones-top">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second">
+            <div class="content-page C1">  
+                <div class="icon-text5">
+                    <div class="texts4">
+                        <h2>História</h2>
+                        <p class="animation-text6-right">
+                            Os Yanomami são um dos povos indígenas mais antigos da América do Sul, com  mais de 10 mil anos. Originários da região do Alto Orinoco, na fronteira da Venezuela e da Colômbia, espalharam-se ao longo do tempo para a região amazônica. O contato com exploradores e missionários europeus no final do século XIX levou a doenças e conflitos violentos que afetaram enormemente a população Yanomami.
+                        </p>
+                    </div>
+                    
+                    <div class="line">
+                        <div class="space"></div>
+                        <div class="line-text">
+                            <p>1900</p>
+                        </div>
+                    </div>
+
+                    <div class="imgs2">
+                        <img src="../../img/tri3/tri3 2-1.png" alt="" class="animation-icon1-opa">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second">
+            <div class="content-page C1">  
+                <div class="icon-text5">
+                    <div class="bloco">
+                        <div class="imgs3">
+                            <img src="../../img/tri3/tri3 2-2.png" alt="" class="animation-icon2-opa">
+                        </div>
+
+                        <div class="texts4">
+                            <p class="animation-text6-right">
+                                Na década de 1980, a situação precária dos Yanoms atraiu a atenção internacional, provocando a criação, em 1992, da Terra Indígena Yanomami, a maior reserva indígena do Brasil, com 96.650 km². Desde então, os Yanomami lutam para proteger suas terras e sua  cultura de ameaças como a exploração de recursos naturais.                            
+                            </p>
+                        </div>                      
+                    </div>
+                    
+                    <div class="lines">
+                        <div class="line2">
+                            <div class="line-text2">
+                                <p>1960</p>
+                            </div>
+                            <div class="space2"></div>
+                        </div>
+    
+                        <div class="line3">
+                            <div class="space"></div>
+                            <div class="line-text3">
+                                <p>1980</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bloco">
+                        <div class="texts4">
+                            <p class="animation-text6-right">
+                                Na década de 1960, o governo brasileiro iniciou um programa de desenvolvimento na Amazônia que aumentou o contato entre os Janomam e os povos não indígenas. Isto resultou numa perda significativa de vidas devido a doenças para as quais os Yanomami não tinham imunidade, como a malária e a gripe, e à violência e discriminação por parte de mineiros e invasores terrestres.
+                            </p>
+                        </div>
+
+                        <div class="imgs3">
+                            <img src="../../img/tri3/tri3 2-3.png" alt="" class="animation-icon3-opa">
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </section>
+        
+        <section class="second" id="second">
+            <div class="content-page C2">
+                <div class="text">
+                    <h2>Localização</h2>
+
+                    <p class="animation-text4-right">
+                        Os Yanomami vivem em uma área remota da floresta tropical do Norte da Amazônia, que abrange partes da Venezuela e do Brasil. A maior parte da população Yanomami vive no Brasil, na Terra Indígena Yanomami, que cobre 9.664.975 hectares (96.650 km²) de floresta tropical 
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img src="../../img/tri3/tri3 3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second" style="background-image: url(../../img/geral/foiabg.svg);">
+            <div class="content-page C1">  
+                <div class="icon-text3">
+                    <div class="texts3">
+                        <h2>Cultura</h2>
+                        <p class="animation-text1-left green">
+                            A cultura Yanomami possui uma grande riqueza em tradições e rituais. A cerimônia de yãkoana, por exemplo, é de extrema importância para os Yanomami. A cerimônia é conduzida como forma de marcar a transição dos meninos para a idade adulta masculina. Durante a cerimônia, os meninos são decorados com urucum e cinzas e submetidos a um período de isolamento, no qual adquirem conhecimento sobre a rica história e cultura do povo Yanomami. <br> <br>
+                            Fundamentais para a sua identidade. Eles utilizam flautas, tambores e outros instrumentos musicais para acompanhar suas danças.
+                        </p>
+                    </div>
+                    
+                    <div class="imgs4">
+                        <img src="../../img/tri3/tri3 4-1.png" alt="" class="animation-icones-top">
+                        <img src="../../img/tri3/tri3 4-2.png" alt="" class="animation-icones-top">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second" id="second" style="background-image: url(../../img/geral/foiabg.svg);">
+            <div class="content-page C1">  
+                <div class="icon-text3">
+                    <div class="imgs3">
+                        <img src="../../img/tri3/tri3 5-1.png" alt="" class="animation-icones-top">
+                        <img src="../../img/tri3/tri3 5-2.png" alt="" class="animation-icones-top">
+                        <img src="../../img/tri3/tri3 5-3.png" alt="" class="animation-icones-top">
+                    </div>
+                    
+                    <div class="texts3">
+                        <h2>Cultivo</h2>
+                        <p class="p2 animation-text2-right green">
+                            Os Yanomami constituem um grupo de povos indígenas sul-americanos que residem na região setentrional da floresta amazônica. Eles ingerem uma diversidade de alimentos, tais como mel silvestre, banana, milho, mandioca, frutas, sementes, pássaros, veados, tatus, nozes e macacos. Enquanto os homens se dedicam à caça, as mulheres se envolvem na colheita ou auxiliam no plantio. <br>
+
+                            Na floresta amazônica, os homens se dedicam à caça de animais. No entanto, quando se mata um animal, a carne não é consumida pelas pessoas. Ao invés disso, eles partilham com amigos e vizinhos. Este caçador recebe a carne de outros caçadores. <br>
+
+                            Nas hortas, as mulheres assumem a responsabilidade pelo cultivo de culturas como o milho ou a mandioca. Entretanto, os agricultores se dedicam ao cultivo de aproximadamente 60 tipos distintos de plantas, incluindo o algodão e o tabaco. Aproximadamente 80% dos alimentos ingeridos por seres humanos são produzidos em leitos de flores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="end">
+            <section class="content donate" style="background-image: url(../../img/geral/donate.jpg); background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;">
+                <div class="donate-box animation-donate-right">
+                    <h2>Faça sua Parte</h2>
+                    <div class="donate-text">
+                        <p>
+                            Ajude aqueles que <span>necessitam</span> da sua ajuda, com pouco você ajuda muito.
+                        </p>
+                    </div>
+                    <a class="donate-btn" href="donate-pt.html"><span>Doe Agora</span></a>
+                </div>
+            </section>
+    
+            <section class="container-fluid content footer" style="background-image: url(../../img/geral/foiabg.svg);">
+                <div class="logo col-4 animation-logo-left">
+                    <a href="index-pt.html">
+                        <img src="../../img/geral/logos/logofooter.svg" alt="">
+                    </a>
+                    <div class="slogan">
+                        A cada perseverança, uma nova esperança
+                    </div>
+                </div>
+    
+                <div class="footer-menu animation-menu-right">
+                    <div class="menu-list">
+                        <ul class="footer-menu">
+                            <div class="block1">
+                                <div class="footer-itens">
+                                    <li class="menu-item"><a href="index-pt.html" class="nav-link" id="title">Início</a></li>
+                                    <li class="menu-item"><a href="cont-pt.html" class="nav-link" id="title">História</a></li>
+                                    <li class="menu-item"><a href="devs-pt.html" class="nav-link" id="title">Quem Somos</a></li>
+                                </div>
+                            </div>
+                            <div class="block2">
+                                <li class="menu-item">
+                                    <span id="title">Impactos</span>
+                                    <ul class="menu-submenu">
+                                        <li class="nav-sub-item"><a href="bio-pt.html" class="nav-link" id="sub-title">Biodiversidade</a></li>
+                                        <li class="nav-sub-item"><a href="cult-pt.html" class="nav-link" id="sub-title">Cultura Indígena</a></li>
+                                        <li class="nav-sub-item"><a href="sau-pt.html" class="nav-link" id="sub-title">Saúde</a></li>
+                                        <li class="nav-sub-item"><a href="eco-pt.html" class="nav-link" id="sub-title">Economia</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="block3">
+                            <li class="menu-item">
+                                <span id="title">Saiba Mais</span>
+                                <ul class="menu-submenu">
+                                    <li class="nav-sub-item"><a href="leg-pt.html" class="nav-link" id="sub-title">Legislação</a></li>
+                                    <li class="nav-sub-item"><a href="orgs-pt.html" class="nav-link" id="sub-title">Organizações</a></li>
+                                    <li class="nav-sub-item"><a href="solu-pt.html" class="nav-link" id="sub-title">Soluções</a></li>
+                                </ul>
+                            </li>
+                                <li class="menu-item">
+                                    <span id="title">Tribos</span>
+                                    <ul class="menu-submenu">
+                                        <li class="nav-sub-item"><a href="tri1-pt.html" class="nav-link" id="sub-title">Munduruku</a></li>
+                                        <li class="nav-sub-item"><a href="tri2-pt.html" class="nav-link" id="sub-title">Kayapó</a></li>
+                                        <li class="nav-sub-item"><a href="tri3-pt.html" class="nav-link" id="sub-title">Yanomami</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>

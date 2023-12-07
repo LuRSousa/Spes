@@ -1,0 +1,805 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#mySidenav , .opennav , .navbar-brand.mobile{
+  display: none;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  background-color: #172915;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav #title{
+  padding-left: 2rem;
+}
+
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.opennav{
+  cursor: pointer;
+  transition: 500ms;
+}
+
+  .opennav:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+  }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.nav-menu{
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-list ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar-brand{
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 500ms;
+}
+
+  .navbar-brand:hover{
+    color: rgb(36, 129, 59);
+    transition: 500ms;
+  }
+
+.nav-item{
+  margin: 0;
+  position: relative;
+  transition: 800ms;
+  display: block;
+  padding: 1rem;
+  transition: 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+  .nav-item:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: 500ms;
+
+      .nav-submenu{
+        transform: translateX(-50%) rotateX(0);
+        transition: 500ms;
+        opacity: 1;
+      }
+
+      .arrow{
+        transform: rotate(180deg);
+        transition: 500ms;
+      }
+  }
+
+.arrow{
+  transition: 500ms;
+}
+
+#title{
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #000;
+  padding: 0;
+  transition: 800ms;
+}
+
+  #title:hover{
+    color: rgb(93, 219, 125);
+    transition: 800ms;
+  }
+
+.nav-link{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-submenu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 15rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%) rotatex(90deg);
+  border-radius: 0px 0px 30px 30px;
+  transform-origin: center;
+  top: 90%;
+  transition: 500ms;
+  z-index: 1;
+}
+
+.nav-sub-item{
+  display: block;
+  transition: 800ms;
+  text-shadow: 1px 1px #000; 
+  border-radius: 30px;
+}
+
+  .nav-sub-item:hover{
+    background-color: rgb(21, 107, 43);
+    transition: 800ms;
+  }
+
+.nav-sub-item a{
+  font-weight: 600;
+}
+
+  .nav-sub-item a:hover{
+    color: #fff;
+  }
+
+.btns{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn{
+  transition: 900ms;
+}
+
+.btn a{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.lang{
+  display: flex;
+  align-items: center;
+  border: none;
+  width: 30px;
+  height: 100%;
+  transition: 500ms;
+  background: none;
+}
+
+.lang:hover{
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.lang a{
+  display: flex;
+  align-items: center;
+}
+
+.lang a img{
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+section.first , section.second , section.third{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 0;
+}
+
+section.first{
+  padding: 0rem 3rem 6rem 3rem;
+}
+
+.card-text-content{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 2.3rem;
+}
+
+.content-text{
+  color: #FFF;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px #000;
+}
+
+.content-text span{
+    color: red;
+}
+
+.saibam-btn{
+    color: rgb(62, 136, 90);
+    border-radius: 10px 0px 10px 0px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.saibam-btn{
+    background: rgb(255, 255, 255);
+    width: 230px;
+    height: 70px;
+    padding: 0;
+    border: none;
+    margin-left: 1rem;
+}
+  .saibam-btn span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 700ms;
+    font-size: 2rem;
+  }
+
+  .saibam-btn:before,
+  .saibam-btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(38,92,74,1);
+    transition: all 0.7s ease;
+  }
+  .saibam-btn:before {
+    height: 0%;
+    width: 2px;
+  }
+  .saibam-btn:after {
+    width: 0%;
+    height: 2px;
+  }
+  .saibam-btn:hover{
+    background: transparent;
+    box-shadow: none;
+  }
+  .saibam-btn:hover:before {
+    height: 100%;
+  }
+  .saibam-btn:hover:after {
+    width: 100%;
+  }
+  .saibam-btn span:hover{
+     color: rgba(255,255,255,1);
+     transition: 700ms;
+  }
+  .saibam-btn span:before,
+  .saibam-btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(38,92,74,1);
+    transition: all 0.7s ease;
+  }
+  .saibam-btn span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .saibam-btn span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .saibam-btn span:hover:before {
+    height: 100%;
+  }
+  .saibam-btn span:hover:after {
+    width: 100%;
+  }
+
+  section.end{
+    height: 100vh;
+    padding: 0;
+    border-radius: none;
+    background: #5a5a5a;
+  }
+  
+.donate{
+  height: 65%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  overflow-x: hidden;
+}
+
+.donate-box{
+  height: 100%;
+  width: 50%;
+  background: #59585aa1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.donate-box h2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #00890E;
+  text-shadow: 3px 3px #266b38;
+  z-index: 1;
+}
+
+.donate-text{
+  width: 100%;
+  padding: 2rem;
+  font-size: 3.7rem;
+  font-weight: 1000;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  line-height: 5rem;
+}
+
+.donate-text p span{
+  color: rgb(21, 107, 43);
+  text-shadow: 2px 2px 3px#fff;
+}
+
+.donate-btn{
+  color: rgb(62, 136, 90);
+  border-radius: 10px 0px 10px 0px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.donate-btn{
+  background: rgb(255, 255, 255);
+  width: 230px;
+  height: 70px;
+  padding: 0;
+  border: none;
+}
+
+.donate-btn span{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: 700ms;
+  font-size: 1.6rem;
+}
+
+  .donate-btn:before,
+  .donate-btn:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(38,92,74,1);
+    transition: all 0.7s ease;
+  }
+
+  .donate-btn:before{
+    height: 0%;
+    width: 2px;
+  }
+
+  .donate-btn:after{
+    width: 0%;
+    height: 2px;
+  }
+
+    .donate-btn:hover{
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .donate-btn:hover:before{
+      height: 100%;
+    }
+
+    .donate-btn:hover:after{
+      width: 100%;
+    }
+
+    .donate-btn span:hover{
+      color: rgba(255,255,255,1);
+      transition: 700ms;
+    }
+
+  .donate-btn span:before,
+  .donate-btn span:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(38,92,74,1);
+    transition: all 0.7s ease;
+  }
+
+  .donate-btn span:before{
+    width: 2px;
+    height: 0%;
+  }
+
+  .donate-btn span:after{
+    width: 0%;
+    height: 2px;
+  }
+
+    .donate-btn span:hover:before{
+      height: 100%;
+    }
+
+    .donate-btn span:hover:after{
+      width: 100%;
+    }
+
+.container-fluid.footer{
+  height: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 0;
+  gap: 1rem;
+  background: rgb(0,101,22);
+  background: linear-gradient(135deg, rgba(0,101,22,1) 0%, rgba(41,134,66,1) 31%, rgba(48,164,79,1) 79%, rgba(104,190,130,1) 99%);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo a{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.logo a img{
+  width: 50%;
+  height: 140px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.slogan{
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  font-size: 1.2rem;
+  width: 70%;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.footer-menu{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer-itens{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.block1 , .block2 , .block3{
+  display: flex;
+}
+
+.menu-submenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-list ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1500px){
+  section.first{
+    padding: 0rem 1rem 6rem 1rem;
+  }
+
+  .content-text{
+    width: 70%;
+    font-size: 3.4rem;
+  }
+
+  .saibam-btn{
+    width: 200px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1340px){
+  .navbar-brand img{
+    width: 50px;
+    width: 50px;
+  }
+
+  a #title , span #title{
+    font-size: 1.2rem;
+  }
+
+  .navbar-brand{
+    font-size: 1.7rem;
+  }
+
+  .nav-menu{
+    gap: 0;
+  }
+
+  .donate-btn{
+    margin-right: 2rem;
+  }
+
+  .btn a{
+    font-size: 1rem;
+  }
+
+  .btn a svg{
+    height: 20px;
+    width: 20px;
+  }
+
+  .lang a img{
+    height: 20px;
+    width: 20px;
+  }
+
+  .donate-text{
+    font-size: 2rem;
+  }
+
+  .logo{
+    width: 100%;
+  }
+
+  .logo a{
+    width: 50%;
+  }
+
+  .logo.slogan{
+    width: 50%;
+  }
+
+  .logo a img{
+    border: none;
+    width: 100%;
+  }
+
+  .slogan{
+    font-size: 1rem;
+    height: 100%;
+  }
+
+  .container-fluid.footer{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+  #mySidenav , .opennav{
+    display: block;
+  }
+
+  .navbar-brand.mobile{
+    display: flex;
+  }
+
+  .btns.mobile{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btns.mobile .btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+  }
+
+  .footer-itens #title , .menu-item #title{
+    border-bottom: 1px solid white;
+  }
+
+  .btns.mobile .lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btns.mobile .lang a{
+    padding: 0;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .footer-menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .block1 , .block2 , .block3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .donate-box{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .content-text{
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .content-text{
+    font-size: 2.3rem;
+  }
+}

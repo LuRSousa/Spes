@@ -1,0 +1,262 @@
+section.first{
+    padding: 0;
+    display: flex;
+    overflow-y: hidden;
+}
+
+header{
+    padding: 0rem 3rem 0rem 3rem;
+    z-index: 100000;
+}
+
+.boxes{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    position: absolute;
+    top: 8.2%;
+    left: 50%;
+    height: 91.8vh;
+    width: 50vw;
+    z-index: 100;
+    box-shadow: -14px 1px 17px -8px rgba(0,0,0,0.50);
+    -webkit-box-shadow: -14px 1px 17px -8px rgba(0,0,0,0.50);
+    -moz-box-shadow: -14px 1px 17px -8px rgba(0,0,0,0.50);
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.login-box , .logup-box{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+}
+
+#loginbox{
+    position: absolute;
+    left: 0%;
+    top: 0;
+}
+
+#logupbox{
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+form{
+    background-color: white;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px rgb(62, 136, 90) solid;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+form h1{
+    width: 75%;
+    height: 7%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: rgb(62, 136, 90);
+    margin: 0;
+}
+
+.content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.input-box{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgb(62, 136, 90);
+}
+
+.input-box input::placeholder{
+    padding-left: 10px;
+    color: black;
+}
+
+.input-box box-icon{
+    position: absolute;
+    right: 5%;
+    height: 20px;
+    width: 20px;
+    color: rgb(62, 136, 90);
+}
+
+.remember{
+    width: 100%;
+    padding: 0rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember label{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    color: rgb(62, 136, 90);
+}
+
+.remember label input[type="checkbox"]{
+    color: rgb(62, 136, 90);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.remember a{
+    color: rgb(52, 185, 103);
+}
+
+.click{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login-btn{
+    border: 2px solid rgb(62, 136, 90);
+    color: rgb(62, 136, 90);
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 800ms;
+}
+
+.login-btn:hover{
+    background-color: rgb(62, 136, 90);
+    color: #fff;
+    transition: 800ms;
+}
+
+.register{
+    width: 70%;
+}
+
+.register p{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    color: rgb(62, 136, 90);
+}
+
+.register p a{
+    color: rgb(52, 185, 103);
+}
+
+.allin{
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d1d1d175;
+    z-index: 10000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(25%) translateY(-15.6%);
+}
+
+.allup{
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d1d1d175;
+    z-index: 10000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(25%) translateY(-18.4%);
+    backdrop-filter: blur(2px);
+}
+
+.confirm{
+    background-color: #fff;
+    z-index: 1000000000;
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    box-shadow: 1px 1px 142px 54px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 142px 54px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 1px 142px 54px rgba(0,0,0,0.15);
+    position: relative;
+    border-radius: 20px;
+    border: 3px solid rgb(116, 5, 5);
+}
+
+.confirm .closebtn{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.confirm p{
+    font-size: 2rem;
+    font-weight: 600;
+}
