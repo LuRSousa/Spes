@@ -8,15 +8,62 @@
     scroll-behavior: smooth;
 }
 
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #616161;
+  border-radius: 10px;
+  border: 3px none #ffffff00;
+}
+
 body{
   width: 100%;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #616161 #ffffff00;
 }
 
 header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  padding: 0rem 2rem 0rem 2rem;
+  transition: 1s;
+}
+
+header.rolagem{
+  background-color: rgba(21, 107, 43, 0.699);
+  transition: 1s;
+
+  .nav-item:hover{
+    .nav-submenu{
+      background-color: rgba(21, 107, 43, 0.699);
+    }
+  }
+
+  .navbar-brand{
+    font-size: 1.7rem;
+    transition: 1s;
+  }
+
+  .navbar-brand img{
+    width: 40px;
+    height: 40px;
+    transition: 1s;
+  }
+
+ 
 }
 
 nav{
@@ -110,10 +157,15 @@ nav{
   align-items: center;
   gap: 1rem;
   transition: 500ms;
+  transition: 1s;
+}
+
+.navbar-brand img{
+  transition: 1s;
 }
 
   .navbar-brand:hover{
-    color: rgb(36, 129, 59);
+    color: rgb(75, 185, 102);
     transition: 500ms;
   }
 
@@ -161,7 +213,7 @@ nav{
 }
 
   #title:hover{
-    color: rgb(93, 219, 125);
+    color: rgb(42, 173, 75);
     transition: 800ms;
   }
 
@@ -187,7 +239,7 @@ nav{
   transform: translateX(-50%) rotatex(90deg);
   border-radius: 0px 0px 30px 30px;
   transform-origin: center;
-  top: 90%;
+  top: 105%;
   transition: 500ms;
   z-index: 1;
 }
@@ -218,8 +270,13 @@ nav{
   gap: 1rem;
 }
 
-.btn{
+.btns button.btn{
   transition: 900ms;
+  border: 1px solid rgb(42, 173, 75);
+}
+
+.btns button.btn:hover{
+  background-color: rgb(42, 173, 75);
 }
 
 .btn a{
@@ -273,7 +330,7 @@ section.first , section.second , section.third{
 }
 
 section.first{
-  padding: 0rem 3rem 6rem 3rem;
+  padding: 0rem 0rem 6rem 0rem;
 }
 
 .card-text-content{
@@ -290,6 +347,8 @@ section.first{
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 5px 5px 5px #000;
+  padding-top: 400px;
+  padding-left: 50px;
 }
 
 .content-text span{
@@ -317,7 +376,7 @@ section.first{
     height: 70px;
     padding: 0;
     border: none;
-    margin-left: 1rem;
+    margin-left: 50px;
 }
   .saibam-btn span{
     position: relative;
